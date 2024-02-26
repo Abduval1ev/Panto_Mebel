@@ -100,7 +100,7 @@ input::-ms-clear {
 }
 
 button,
-input[type="submit"] {
+input[type=submit] {
   display: inline-block;
   box-shadow: none;
   background-color: transparent;
@@ -149,7 +149,6 @@ legend {
 }
 
 .header {
-  position: relative;
   background-color: var(--footer-bg);
   background-image: url("../../../products/Rectangle 1441.jpg");
   background-size: cover;
@@ -239,6 +238,7 @@ legend {
 }
 
 .mobile_nav_wrapper {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -250,9 +250,32 @@ legend {
   font-size: 20px;
   background-color: var(--footer-bg);
 }
+.mobile_nav_wrapper__open {
+  display: block;
+}
+.mobile_nav_wrapper .mobile_nav_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.mobile_nav_wrapper .mobile_nav_header .mobile_cart {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 20px;
+  padding: 0 20px 0 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 22px;
+  font-weight: 500;
+}
 .mobile_nav_wrapper .mobile_nav {
   display: grid;
   gap: 20px;
+  font-size: 18px;
 }
 .mobile_nav_wrapper .mobile_nav .mobile_nav_item .mobile_sub_nav {
   display: grid;
@@ -348,7 +371,7 @@ legend {
   border: 0.862px solid rgba(255, 255, 255, 0.6);
   background: rgba(255, 255, 255, 0.15);
   -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 .search_form .search_form_input {
   flex-grow: 1;
@@ -417,7 +440,7 @@ legend {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
   animation: pluse 1s infinite alternate;
 }
 @keyframes pluse {
@@ -445,7 +468,7 @@ legend {
 .info_hint .info_hint_radio {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
+          clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -627,10 +650,7 @@ legend {
   font-size: 20px;
   font-weight: 600;
 }
-.product_card
-  .product_card_desc
-  .product_card_footer
-  .product_card_price::before {
+.product_card .product_card_desc .product_card_footer .product_card_price::before {
   content: attr(data-value);
   font-size: 15px;
 }
@@ -752,4 +772,4 @@ legend {
 }
 .sub_nav .sub_nav_item .sub_nav_link:hover {
   color: var(--accent);
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
