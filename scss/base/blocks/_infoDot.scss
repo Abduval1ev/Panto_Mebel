@@ -1,0 +1,49 @@
+.header_dot_sofa,
+.header_dot_vase,
+.header_dot_item,
+.header_dot_wall {
+  .info_dot {
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      .info_dot_circle {
+        background-color: var(--accent);
+      }
+      .info_dot_readius {
+        animation: pluse 1s infinite alternate paused;
+      }
+    }
+  }
+  .info_dot_circle {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: 0.4s ease-in-out;
+  }
+  .info_dot_readius {
+    width: 32px;
+    height: 32px;
+
+    border: 0.86px solid #fff;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+
+    animation: pluse 1s infinite alternate;
+  }
+  @keyframes pluse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+}

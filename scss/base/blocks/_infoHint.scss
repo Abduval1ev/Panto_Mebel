@@ -1,0 +1,48 @@
+.info_hint {
+  position: absolute;
+  top: -200%;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  display: flex;
+  justify-content: center;
+  padding: 12px 0 0;
+  gap: 8px;
+  width: 112px;
+  height: 56px;
+  background-image: url("../../../images/tooltip.svg");
+  .info_hint_radio {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+
+    &:checked + .info_hint_radio_fake {
+      background-image: url("../../../icons/check.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+  .info_hint_radio_fake {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: gray;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
+
+    &__orange {
+      background: var(--ui-orange);
+    }
+    &__beruza {
+      background: var(--ui-beruza);
+    }
+    &__gray {
+      background: var(--ui-gray);
+    }
+  }
+}

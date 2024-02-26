@@ -1,0 +1,38 @@
+.mobile_nav_wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 320px;
+  height: 100vh;
+  color: var(--footer-text-color);
+  padding: 30px 30px;
+  font-size: 20px;
+  background-color: var(--footer-bg);
+
+  .mobile_nav {
+    display: grid;
+    gap: 20px;
+    font-size: 18px;
+
+
+    .mobile_nav_item {
+      .mobile_sub_nav {
+        display: grid;
+        gap: 15px;
+        padding: 20px 20px 0;
+        font-size: 16px;
+
+        .mobile_sub_nav_item {
+          .mobile_nav_link {
+            
+          }
+        }
+      }
+
+      .mobile_nav_link {
+        &__dropdown {}
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.nav {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  gap: 20px;
+  padding: 40px 0 0;
+  .nav_btn {
+    display: none;
+    @include tablet() {
+      display: block;
+    }
+  }
+  .nav_logo {
+    align-self: center;
+  }
+}
