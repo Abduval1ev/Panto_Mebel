@@ -6,10 +6,18 @@
   bottom: 0;
   width: 320px;
   height: 100vh;
-  color: var(--footer-text-color);
   padding: 30px 30px;
   font-size: 20px;
   background-color: var(--footer-bg);
+
+  a {
+    color: var(--footer-text-color);
+    transition: color 0.2s ease-in;
+
+    &:hover {
+      color: #fff;
+    }
+  }
 
   &__open {
     display: block;
@@ -34,7 +42,6 @@
 
       font-size: 22px;
       font-weight: 500;
-
     }
   }
 
@@ -51,9 +58,6 @@
         padding: 20px 20px 0;
         font-size: 16px;
 
-        .mobile_sub_nav_item {
-          .mobile_nav_link {}
-        }
       }
 
       .mobile_nav_link {

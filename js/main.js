@@ -4,6 +4,9 @@ const infoHints = document.querySelectorAll('.info_hint')
 for (let btn of infoBtns) {
     btn.addEventListener('click', function (e) {
         e.stopPropagation();
+        for (let hint of infoHints) {
+            hint.classList.add('none')
+        }
         this.parentNode
             .querySelector('.info_hint')
             .classList.toggle('none')
@@ -15,7 +18,6 @@ document.addEventListener('click',
     function () {
         for (let hint of infoHints) {
             hint.classList.add('none')
-
         }
     })
 
@@ -74,7 +76,6 @@ for (let btn of tabBtns) {
         // Turn On active btn
         this.classList.add('tab_controls_btn__active')
 
-        console.log(this.dataset.tab);
 
         for (let product of tabsProducts) {
 
@@ -94,4 +95,19 @@ for (let btn of tabBtns) {
         swiper.update()
 
     })
+}
+
+// ! Mobile Nav 
+
+const mobileOpenBtn = document.querySelector('#open_mobile_nav')
+const mobileCloseBtn = document.querySelector('#close_mobile_nav')
+const mobileNav = document.querySelector('#mobile_nav')
+
+// ! mobile_nav_wrapper__open
+
+mobileOpenBtn.onclick = function () {
+    mobileNav.classList.add('mobile_nav_wrapper__open')
+}
+mobileCloseBtn.onclick = function () {
+    mobileNav.classList.remove('mobile_nav_wrapper__open')
 }
