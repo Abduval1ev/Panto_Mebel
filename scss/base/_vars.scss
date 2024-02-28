@@ -23,13 +23,21 @@
 }
 
 @mixin retina-bg($image) {
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolition: 192dip) {
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolition: 192dip) {
     background-image: $image;
   }
 }
 
 @mixin tablet() {
   @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin mobile_xl() {
+  @media (max-width: 819px) {
     @content;
   }
 }

@@ -55,12 +55,12 @@
           <div class="cart_count">0</div>
         </a>
 
-        <button class="nav_btn">
+        <button id="open_mobile_nav" class="nav_btn">
           <img src="/icons/menu.svg" alt="Open" />
         </button>
       </nav>
       <!-- ! NAVIGATION -->
-      <div class="header_content none">
+      <div class="header_content">
         <h1 class="header_title">
           Make your interior more minimalistic & modern
         </h1>
@@ -77,7 +77,7 @@
         </form>
       </div>
 
-      <div class="header_dot_sofa none">
+      <div class="header_dot header_dot_sofa">
         <button class="info_dot">
           <div class="info_dot_circle"></div>
           <div class="info_dot_readius"></div>
@@ -101,32 +101,7 @@
         </div>
       </div>
       <!--  -->
-      <div class="header_dot_vase none">
-        <button class="info_dot">
-          <div class="info_dot_circle"></div>
-          <div class="info_dot_readius"></div>
-        </button>
-
-        <div class="info_hint none">
-          <label>
-            <input type="radio" name="sofa_color" class="info_hint_radio" />
-            <div class="info_hint_radio_fake info_hint_radio_fake__orange"></div>
-            <!--  -->
-          </label>
-          <!-- ! -->
-          <label>
-            <input type="radio" name="sofa_color" class="info_hint_radio" />
-            <div class="info_hint_radio_fake info_hint_radio_fake__beruza"></div>
-          </label>
-          <!-- ! -->
-          <label>
-            <input type="radio" name="sofa_color" class="info_hint_radio" />
-            <div class="info_hint_radio_fake info_hint_radio_fake__gray"></div>
-          </label>
-        </div>
-      </div>
-      <!--  -->
-      <div class="header_dot_item none">
+      <div class="header_dot header_dot_vase">
         <button class="info_dot">
           <div class="info_dot_circle"></div>
           <div class="info_dot_readius"></div>
@@ -151,7 +126,32 @@
         </div>
       </div>
       <!--  -->
-      <div class="header_dot_wall none">
+      <div class="header_dot header_dot_item">
+        <button class="info_dot">
+          <div class="info_dot_circle"></div>
+          <div class="info_dot_readius"></div>
+        </button>
+
+        <div class="info_hint none">
+          <label>
+            <input type="radio" name="sofa_color" class="info_hint_radio" />
+            <div class="info_hint_radio_fake info_hint_radio_fake__orange"></div>
+            <!--  -->
+          </label>
+          <!-- ! -->
+          <label>
+            <input type="radio" name="sofa_color" class="info_hint_radio" />
+            <div class="info_hint_radio_fake info_hint_radio_fake__beruza"></div>
+          </label>
+          <!-- ! -->
+          <label>
+            <input type="radio" name="sofa_color" class="info_hint_radio" />
+            <div class="info_hint_radio_fake info_hint_radio_fake__gray"></div>
+          </label>
+        </div>
+      </div>
+      <!--  -->
+      <div class="header_dot header_dot_wall">
         <button class="info_dot">
           <div class="info_dot_circle"></div>
           <div class="info_dot_readius"></div>
@@ -175,59 +175,13 @@
         </div>
       </div>
       <!--  -->
-    </div>
-
-    <!-- ! Mobile Nav -->
-    <div class="mobile_nav_wrapper">
-
-      <div class="mobile_nav_header">
-        <a href="#!" class="mobile_cart">
-          <div href="#!" class="cart">
-            <img class="cart_img" src="./icons/basket_icon.svg" alt="Cart!" />
-            <div class="cart_count">0</div>
-          </div>
-          Cart
-        </a>
-        <button class="mobile_nav_btn_close">
-          <img src="./icons/close.svg" class="mobile_nav_icon" alt="Icon">
-        </button>
-      </div>
-
-      <ul class="mobile_nav">
-        <li class="mobile_nav_item">
-          <a href="#" class="mobile_nav_link mobile_nav_link__dropdown">Furniture</a>
-          <ul class="mobile_sub_nav">
-            <li class="mobile_sub_nav_item">
-              <a href="#!" class="mobile_nav_link">Home</a>
-            </li>
-            <li class="mobile_sub_nav_item">
-              <a href="#!" class="mobile_sub_nav_link">Service</a>
-            </li>
-            <li class="mobile_sub_nav_item">
-              <a href="#!" class="mobile_sub_nav_link">Product</a>
-            </li>
-            <li class="mobile_sub_nav_item">
-              <a href="#!" class="mobile_sub_nav_link">Contacts</a>
-            </li>
-          </ul>
-        </li>
-        <li class="mobile_nav_item">
-          <a href="#" class="mobile_nav_link">Shop</a>
-        </li>
-        <li class="mobile_nav_item">
-          <a href="#" class="mobile_nav_link">About Us</a>
-        </li>
-        <li class="mobile_nav_item">
-          <a href="#" class="mobile_nav_link">Contact</a>
-        </li>
-      </ul>
     </div>
 
     <!-- ! -->
   </header>
   <!-- ! HEADER -->
 
-  <section class="benefits none">
+  <section class="benefits">
     <div class="container">
       <div class="benefits_grid">
         <h2 class="benefits_title">Why Choosing Us</h2>
@@ -264,7 +218,7 @@
   </section>
   <!-- ! SECTION_BENEFITS -->
 
-  <section class="products none">
+  <section class="products">
     <div class="container">
       <h2 class="products_title">Best Selling Product</h2>
       <div class="products_tabs">
@@ -923,7 +877,7 @@
   </section>
   <!-- !SECTION_PRODUCTS -->
 
-  <footer class="footer none">
+  <footer class="footer">
     <div class="container container_small">
       <div class="footer_grid">
         <div class="footer_desc">
@@ -965,6 +919,53 @@
       <!-- ! Footer Row -->
     </div>
   </footer>
+
+
+  <!-- ! Mobile Nav -->
+  <div id="mobile_nav" class="mobile_nav_wrapper">
+
+    <div class="mobile_nav_header">
+      <a href="#!" class="mobile_cart">
+        <div href="#!" class="cart">
+          <img class="cart_img" src="./icons/basket_icon.svg" alt="Cart!" />
+          <div class="cart_count">0</div>
+        </div>
+        Cart
+      </a>
+      <button id="close_mobile_nav" class="mobile_nav_btn_close">
+        <img src="./icons/close.svg" class="mobile_nav_icon" alt="Icon">
+      </button>
+    </div>
+
+    <ul class="mobile_nav">
+      <li class="mobile_nav_item">
+        <a href="#" class="mobile_nav_link mobile_nav_link__dropdown">Furniture</a>
+        <ul class="mobile_sub_nav">
+          <li class="mobile_sub_nav_item">
+            <a href="#!" class="mobile_nav_link">Home</a>
+          </li>
+          <li class="mobile_sub_nav_item">
+            <a href="#!" class="mobile_sub_nav_link">Service</a>
+          </li>
+          <li class="mobile_sub_nav_item">
+            <a href="#!" class="mobile_sub_nav_link">Product</a>
+          </li>
+          <li class="mobile_sub_nav_item">
+            <a href="#!" class="mobile_sub_nav_link">Contacts</a>
+          </li>
+        </ul>
+      </li>
+      <li class="mobile_nav_item">
+        <a href="#" class="mobile_nav_link">Shop</a>
+      </li>
+      <li class="mobile_nav_item">
+        <a href="#" class="mobile_nav_link">About Us</a>
+      </li>
+      <li class="mobile_nav_item">
+        <a href="#" class="mobile_nav_link">Contact</a>
+      </li>
+    </ul>
+  </div>
 </body>
 
 </html>

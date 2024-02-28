@@ -14,16 +14,16 @@
     &__prev {
       position: absolute;
       z-index: 10;
-      left: 0;
+      // left: 0;
       top: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-20%, -50%);
     }
     &__next {
       position: absolute;
       z-index: 10;
       right: 0;
       top: 50%;
-      transform: translate(50%, -50%);
+      transform: translate(10px, -50%);
     }
   }
 }
