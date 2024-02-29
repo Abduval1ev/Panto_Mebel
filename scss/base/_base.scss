@@ -4,6 +4,7 @@ html,
 body {
   font-family: var(--font-main);
   color: var(--text-color);
+
   // padding: 0 0 10vh;
   .container {
     max-width: 1310px;
@@ -17,5 +18,10 @@ body {
 
   .none {
     display: none !important;
+  }
+
+  .title_2 {
+    font-weight: 700;
+    font-size: clamp(32px, 1.702rem + 1.50vw, 42px);
   }
 }

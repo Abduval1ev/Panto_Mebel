@@ -19,6 +19,7 @@
     position: static;
   }
 
+
   .header_nav {
     margin: 0 0 86px;
     margin: 0 0 clamp(1.25rem, 0.070rem + 5.90vw, 5.90rem);
@@ -49,6 +50,10 @@
 
     .header_search {
       margin: 45px auto 0;
+
+      @include mobile_xl() {
+        display: none;
+      }
     }
   }
 
@@ -70,7 +75,6 @@
   }
 
   .header_dot_vase {
-    position: absolute;
     left: calc(114 * 100% / 1410);
     top: calc(754 * 100% / 1065);
 

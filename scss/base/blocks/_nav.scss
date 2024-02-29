@@ -4,6 +4,10 @@
   gap: 20px;
   padding: 40px 0 0;
 
+  @include mobile () {
+    padding: 12px 0 0;
+  }
+
   .nav_btn {
     display: none;
 
